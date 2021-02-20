@@ -18,6 +18,7 @@ try:
     ser.open()
 except:
     ser.close()
+    print("NO")
     ser.open()
 ser.baudrate = 512000
 outfile = open("outraw.txt", "w")
@@ -26,7 +27,7 @@ print("COM Port successfully opened")
 while not open("killme.txt", "r").read() == "killme":
     t = open('switch.txt', 'r').read()
     out = str(ser.readline().strip()).replace("'", "").replace("b", "") + ", " + state_char(t)
-    # print(out, t)
+    #print(out, t)
     
     
     if t:

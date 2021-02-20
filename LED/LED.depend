@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1613853134 source:c:\users\karol\desktop\ledbacklight\led\main.c
+	<stdio.h>
+	<math.h>
+
